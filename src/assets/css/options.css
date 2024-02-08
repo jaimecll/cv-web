@@ -1,0 +1,123 @@
+/* Container of all the menu */
+.options-container{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:50px;
+    top:0px;
+    left:0px;
+    display:block;
+    padding:14px 30px 14px 30px;
+    background-color:none; 
+    /* background-color:var(--bg-main-color); */
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index:30;
+}
+.option-button{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+
+    display:block;
+    padding-top:4px;
+    padding-left:4px;
+    margin-left: 22px; 
+    margin-right: 0;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+.option-button.switch{
+    width:50px;
+    border-radius:22.5px;
+    cursor:default;
+
+}
+
+
+/* Switch theme of the page */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22.5px;
+    float:left;
+    margin:1px 2px 1px 2px;
+}
+
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.theme-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:var(--bg-smooth-second-color);
+    border-radius: 22.5px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border:0px;
+    border: 1px solid var(--bg-negative-color);
+}
+
+.theme-slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background-color: orange;
+    box-shadow: 0 0 2px 2px yellow,0 0 2px 2px yellow inset
+
+}
+
+input:checked + .theme-slider {
+    background-color: var(--bg-smooth-second-color);
+    border: 1px solid var(--bg-negative-color);
+}
+
+input:focus + .theme-slider {
+    box-shadow: 0 0 1px var(--bg-smooth-second-color);
+}
+
+input:checked + .theme-slider:before {
+    -webkit-transform: translateX(15.2px) translateY(-4px);
+    -ms-transform: translateX(15.2px) translateY(-4px);
+    transform: translateX(15.2px) translateY(-4px);
+    background-color: var(--bg-secondary-color);
+    width:15px;
+    height:15px;
+    left: 2.5px;
+    bottom: 2.5px;
+    box-shadow: 2px 2px 0px 0px var(--bg-main-color);
+}
+
+.menu-button{
+    width:22px;
+    height:22px;
+    float:left;
+    margin-right:20px;
+    fill:var(--bg-main-color);
+    transition: .4s;
+    margin:1px 2px 1px 2px;
+}
+
+
+

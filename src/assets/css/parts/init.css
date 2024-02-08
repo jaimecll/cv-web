@@ -1,0 +1,90 @@
+.init-container{
+    background: linear-gradient(to bottom, var(--bg-second-color), var(--bg-smooth-second-color));
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/svg/layered-waves-haikei.svg);
+    padding-top: 150px;
+}
+
+
+
+h1{
+    font-size:24px;
+    color:var(--bg-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    width:auto;
+}
+h2{ 
+    font-size:44px;
+    color:var(--bg-negative-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    width:auto;
+}
+h3{
+    font-size:44px;
+    color:var(--bg-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    width:auto;
+}
+
+.line-1{
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+     
+}
+
+/* Animation */
+.animation-typing{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+.animation-typing2{
+    animation: typewriter 4s steps(44) 2.1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+.animation-typing3{
+    animation: typewriter 4s steps(44) 3.2s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.0);}
+  to{border-right-color: transparent;}
+}
+
+@media only screen and (max-width: 600px) {
+  .init-container{
+    text-align: justify;
+  }
+  h1{
+    font-size:24px;
+    color:var(--bg-main-color);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:50px 0px 0px 0px;
+  }
+  h2{ 
+      font-size:34px;
+      color:var(--bg-negative-color);
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0px;
+  }
+  h3{
+      font-size:34px;
+      color:var(--bg-main-color);
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0px;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 11em;}
+  }
+}

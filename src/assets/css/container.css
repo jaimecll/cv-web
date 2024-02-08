@@ -1,0 +1,12 @@
+.general-container{
+    margin-left:100px;
+    position:relative;
+    background-color: var(--bg-smooth-second-color);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .general-container{
+        margin-left:0px;
+    }
+  }
