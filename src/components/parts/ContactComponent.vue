@@ -42,7 +42,7 @@
                   <label class="form-label">
                     Message:
                   </label>
-                  <textarea id="message-input" class="form-input" name="Message" placeholder="Mensaje"></textarea>
+                  <textarea id="message-input" class="form-input" name="Message" placeholder="Message"></textarea>
                   
                   <!-- your other form fields go here -->
                   <button type="submit" >Send</button>
